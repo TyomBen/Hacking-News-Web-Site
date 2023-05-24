@@ -1,8 +1,8 @@
-import DivContent from './DivContents';
+import DataGettingAndShowing from "./Components/DataGetting";
 function App() {
   return (
     <>
-    <DivContent />
+    <DataGettingAndShowing/>
     </>
   );
 }
