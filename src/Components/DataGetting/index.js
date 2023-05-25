@@ -9,7 +9,7 @@ const DataGettingAndShowing = () => {
     const [searchrequest, setSearchRequest] = useState ('');
     const gettingData = async () => {
         try {
-        const response = await fetch (`${URL}?query=react${searchrequest}&page=${urlnumber}`); 
+        const response = await fetch (`${URL}?query=${searchrequest}&page=${urlnumber}`); 
         const data = await response.json();
         const {hits, nbPages} = data;
         setDatas (hits);
