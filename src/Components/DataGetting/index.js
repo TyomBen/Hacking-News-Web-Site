@@ -25,15 +25,12 @@ const DataGettingAndShowing = () => {
     }, [urlnumber, searchrequest])
     
         const handlerNextButton = () => {
-          if (urlnumber >= maxPages){
-
-          }else {
+          if (urlnumber < maxPages){
             setUrlNumber (urlnumber + 1)
           }
         }
         const handlerPrevButton = () => {
-            if (urlnumber <= 0) {
-            }else {
+            if (urlnumber > 0) {
                 setUrlNumber (urlnumber - 1)
             }
         }
